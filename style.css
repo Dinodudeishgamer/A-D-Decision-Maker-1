@@ -1,0 +1,103 @@
+/* General page styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Clean body font */
+    background-color: #fdf1d0; /* Soft, creamy yellow for a warm cozy vibe */
+    color: #5e5a57; /* A soft, dark brown for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1024/1*H_1fG79XzcEFVXUU1UwDzw.jpeg'); /* Optional, add an image of Stars Hollow street for the background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1, h2 {
+    color: #4f4a3d; /* Dark brown, like coffee, for headers */
+    font-family: 'Dancing Script', cursive; /* Fun, hand-lettered look for the Gilmore Girls theme */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #8b5e3c; /* Coffee brown for buttons */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #a97f5b; /* Slightly lighter brown when hovering */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Question container styles */
+#question-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for a soft, cozy look */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+/* Result container styles */
+#result {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for the schedule to give it a cool, retro feel */
+}
+
+pre {
+    background-color: #f4f4f4; /* Soft gray background */
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Hide the result section initially */
+#result {
+    display: none;
+}
+
+/* Center the whole page */
+html, body {
+    height: 100%;
+}
+
+#question-container, #result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    button {
+        padding: 10px 20px; /* Smaller padding on mobile */
+    }
+
+    #question-container, #result {
+        padding: 20px;
+    }
+}

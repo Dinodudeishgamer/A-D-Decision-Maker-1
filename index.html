@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby and Dino's Decisions for the Weekend of Nov 15th</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="question-container">
+        <h1 id="question">What should we do?</h1>
+        <button id="option1" onclick="selectOption('option1')">Option 1</button>
+        <button id="option2" onclick="selectOption('option2')">Option 2</button>
+    </div>
+
+    <div id="result" style="display:none;">
+        <h2>Your Schedule:</h2>
+        <pre id="schedule"></pre>
+        <p>Now, screenshot the results and send it to Dino! Or redo the quiz if you messed up or want to change something!</p>
+        <button onclick="restart()">Restart</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
